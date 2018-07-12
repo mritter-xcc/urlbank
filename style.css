@@ -1,0 +1,20 @@
+table {
+	margin: 10px;
+	padding: 5px;
+	border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+	background-color: #f5f5f5;
+}
+
+input, label, textarea {
+	display: block;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}

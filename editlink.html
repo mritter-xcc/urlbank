@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>URL B@nk</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>URLb@nk - Edit URL</h1>
+	<form action="?editform" method="post">
+	  	<fieldset>
+			<legend>Edit the selected URL:</legend>
+			<label for="url">URL:</label>
+			<input type="text" name="url" id="url" value="<?php echo $address; ?>" autofocus/>
+			<label for="sitename">Site Name:</label>
+			<input type="text" name="sitename" id="sitename" value="<?php echo $siteName; ?>"/>
+			<label for="category">Category:</label>
+			<input type="text" name="category" id="category" value="<?php echo $category; ?>"/>
+			<label for="whoadded">Person Adding:</label>
+			<input type="text" name="whoadded" id="whoadded" value="<?php echo $person; ?>"/>
+			<label for="dateadded">Date Added:</label>
+			<input type="date" name="dateadded" id="dateadded" value="<?php echo $date;?>"/>
+			<label for="description">Description:</label>
+            <textarea id="description" name="description" cols="57" rows="5" ><?php echo $description; ?></textarea><br />
+            <input type="hidden" name="id" value="<?php echo $id; ?>">
+			<input type="submit" value="Update Record" name="add"/>
+	 	</fieldset>
+	</form>
+	<p>[<a href="index.html">Home</a>]</p>
+	<footer>A PHP Learning Exercise | &copy M Ritter - 2018</footer>
+</body>
+</html>
